@@ -12,10 +12,7 @@ pipeline {
         stage('Run Python App') {
             steps {
                 echo '🚀 Lancement de app.py'
-                // Pour Windows
-                bat 'python app.py'
-                // Si tu es sur Linux, utilise :
-                // sh 'python3 app.py'
+                bat 'python app.py || exit /b 1'
             }
         }
     }
