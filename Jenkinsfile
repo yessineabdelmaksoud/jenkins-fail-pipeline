@@ -12,7 +12,7 @@ pipeline {
         stage('Run Python App') {
             steps {
                 echo '🚀 Lancement de app.py'
-                bat 'python app.py || exit /b 1'
+                bat 'python app.py
             }
         }
     }
